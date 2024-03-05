@@ -1,0 +1,50 @@
+.contact-info{
+    margin-top: 5rem;
+    display: grid;
+    grid-template-columns: 100px 100px 100px;    
+    justify-content: center;
+    gap: 50px;
+
+}
+
+.icon-img{
+    width:100px;
+    transition: 0.5s;
+
+    &:hover{
+        cursor: pointer;
+        box-shadow: 5px 5px 5px brown;
+        scale: 1.2;
+    }
+}
+
+.btn-contact {
+    margin-top: 3rem;
+    font-size: x-large;
+    text-decoration: none;
+    padding: 1rem;
+    border-radius: 7px;
+    color: black;
+    background-color: brown;
+    border: none;
+    transition: background-color 0.5s;
+}
+
+.btn-contact:hover {
+    background-color: rgb(189, 69, 69);
+}
+
+
+@media (max-width: 800px) {
+
+    .contact-info {
+        grid-template-columns: 75px 75px 75px;
+        
+    }
+
+    .icon-img {
+        width: 75px
+    }
+   
+};
+

@@ -1,0 +1,41 @@
+:root {
+  --font-color: rgb(170, 131, 131);
+
+
+}
+
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+
+.App {
+  text-align: center;
+  margin: 0;
+  background-color: rgb(3, 7, 18);
+  color: var(--font-color);
+  
+}
+
+.home-img {
+  height:20px;
+
+}
+
+
+.nav-custom{
+  display: flex;
+  position: sticky;
+  width: 100%;
+}
+
+.container-custom {
+  padding: 2rem;
+  margin: 0 2rem;
+}
+
+
+
+

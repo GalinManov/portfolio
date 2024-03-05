@@ -1,0 +1,133 @@
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes appear {
+  from {
+    width: 0rem;
+  }
+
+  to {
+    width: 7rem
+  }
+}
+
+
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem; 
+  margin-bottom: 15rem;
+}
+
+.home-welcome {
+  margin-top: 4rem;
+  display: flex;
+  align-items: center;
+}
+
+.home-intro {
+  font-size: 2rem;
+  text-align: center;
+  padding: 0.7rem;
+  border-radius: 10px;
+  background-color: rgba(254, 254, 253, 0.826);
+  line-height: 1;
+  animation: fadeIn;
+  animation-duration: 0.7s;
+
+}
+
+.line {
+  height: 3px;
+  background-color: brown;
+  animation: appear;
+  animation-duration: 0.7s;
+  animation-fill-mode: forwards;
+
+}
+
+.home-box {
+  opacity: 0;
+  margin-bottom:3rem;
+  animation: fadeIn;
+  animation-duration: 0.7s;
+  animation-delay: 0.3s;
+  animation-fill-mode: forwards;
+
+  h2 {
+    font-size: 3.5rem;
+  }
+
+  p {
+    font-size: 1.2rem;
+  }
+
+
+}
+
+.home-text {
+  max-width: 30%;
+  font-family: sans-serif;
+  font-size: 2rem;
+  text-align: center;
+  animation: fadeIn 3s;
+
+}
+
+.home-more {
+  margin-top: 1rem;
+  border-radius: 50%;
+  background-color: rgba(254, 254, 253, 0.826);
+  max-width: fit-content;
+  margin: 0 auto;
+}
+
+.container-background {
+  background-color: rgba(254, 254, 253, 0.826);
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+.arrow-png {
+  width: 100px;
+  height: 100px;
+
+}
+
+.arrow-png:hover {
+  cursor: pointer;
+}
+
+
+
+@media screen and (max-width: 1199px) {
+
+  .home-intro {
+    min-width: 9rem;
+    p {
+      font-size: 0.9rem;
+    }
+
+  }
+
+  .home-text {
+    min-width: 300px;
+    font-size: 1.5rem;
+  }
+
+  .home-box {
+    flex-wrap: wrap;
+
+  }
+
+}
+
